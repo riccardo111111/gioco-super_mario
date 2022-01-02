@@ -10,7 +10,10 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+
+mvn clean:clean
+
+build:
 
     runs-on: ubuntu-latest
 
