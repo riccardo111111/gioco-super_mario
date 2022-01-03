@@ -29,7 +29,10 @@ jobs:
       - name: install
         run: mvn install
     
-      - name: install
+      - name: clean
+        run: mvn clean
+    
+      - name: compile
         run: mvn compiler:compile
         
 
