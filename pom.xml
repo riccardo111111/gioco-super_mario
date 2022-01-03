@@ -12,13 +12,14 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
-
-
-    <dependency>
-       <groupId>com.github.spotbugs.spotbugs</groupId>
-       <artifactId>test-harness</artifactId>
-       <version>4.0.0_rc1</version>
-    </dependency>
+    
+    <dependencies>
+        <dependency>
+           <groupId>com.github.spotbugs.spotbugs</groupId>
+           <artifactId>test-harness</artifactId>
+           <version>4.0.0_rc1</version>
+        </dependency>
+    </dependencies>
     
 
 
