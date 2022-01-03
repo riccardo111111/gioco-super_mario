@@ -35,4 +35,6 @@ jobs:
       - name: compile
         run: mvn compiler:compile
         
+      - name: checkstyle
+        run: mvn checkstyle  
 
