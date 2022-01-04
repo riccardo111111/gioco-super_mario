@@ -17,6 +17,7 @@ jobs:
 
       steps:
       - uses: actions/checkout@v2
+      - uses: gradle/wrapper-validation-action@v1
       - name: Set up JDK 11
         uses: actions/setup-java@v2
         with:
@@ -34,7 +35,5 @@ jobs:
     
       - name: compile
         run: mvn compiler:compile
-        
-      - name: checkstyle
-        run: mvn test:checkstyle  
+  
 
