@@ -13,13 +13,5 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
     
-    <dependencies>
-        <dependency>
-           <groupId>checkstyle</groupId>
-           <artifactId>checkstyle</artifactId>
-           <version>5.0</version>
-        </dependency>
-    </dependencies>
-    
 
 </project>
