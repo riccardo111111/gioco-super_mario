@@ -25,11 +25,8 @@ jobs:
       run: mvn -B package --file pom.xml
     
   check:
-
       runs-on: ubuntu-latest
-
       needs: build
-
       steps:
        - uses: actions/checkout@v2
        - name: Set up JDK 17
@@ -37,11 +34,42 @@ jobs:
          with:
            java-version: '17'
            distribution: 'adopt'
-           cheche: maven
+           cache: maven
        - name: Spotbugs with Maven
          run: mvn spotbugs:check
 
+  spotbugs:
+    runs-on: ubuntu-latest
+
+    needs: check
+
+    steps:
+     - uses: actions/checkout@v2
+     - name: Set up JDK 17
+       uses: actions/setup-java@v2
+       with:
+         java-version: '17'
+         distribution: 'adopt'
+         cache: maven
+     - name: Spotbugs with Maven
+       run: mvn spotbugs:check
+       
+  PMD:
   
+    runs-on: ubuntu-latest
+    needs: check
+  
+    steps:
+     - uses: actions/checkout@v2
+     - name: Set up JDK 17
+       uses: actions/setup-java@v2
+       with:
+         java-version: '17'
+         distribution: 'adopt'
+         cache: maven
+     - name: Spotbugs with Maven
+       run: mvn pmd:check
+
              
         
   
