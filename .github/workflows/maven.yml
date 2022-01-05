@@ -35,8 +35,8 @@ jobs:
            java-version: '17'
            distribution: 'adopt'
            cache: maven
-       - name: Spotbugs with Maven
-         run: mvn spotbugs:check
+       - name:  Checkstyle with Maven
+         run: mvn checkstyle:check
 
   spotbugs:
     runs-on: ubuntu-latest
