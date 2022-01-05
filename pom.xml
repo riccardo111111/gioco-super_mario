@@ -58,7 +58,7 @@
                         </reports>
                     </reportSet>
                 </reportSets>
-            <plugin>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
