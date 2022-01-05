@@ -41,7 +41,7 @@ jobs:
   spotbugs:
     runs-on: ubuntu-latest
 
-    needs: check
+    needs: build
 
     steps:
      - uses: actions/checkout@v2
@@ -57,7 +57,7 @@ jobs:
   PMD:
   
     runs-on: ubuntu-latest
-    needs: check
+    needs: build
   
     steps:
      - uses: actions/checkout@v2
