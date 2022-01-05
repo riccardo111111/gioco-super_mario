@@ -23,7 +23,7 @@
         <dependency>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs</artifactId>
-            <version>4.5.5</version>
+            <version>4.5.2</version>
         </dependency>
     </dependencies>
          
@@ -67,23 +67,4 @@
             </plugin>
         </plugins>
     </reporting>
-            
-                
-                
-                
-                
-                
-                <plugins>
-            
-                    
-                    
-                    
-                    
-            </plugin>
-
-            
-        
-
-        
-
 </project>
